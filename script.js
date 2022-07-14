@@ -41,14 +41,21 @@ j = number;
 let resetter = document.querySelector(".reset");
 
 resetter.addEventListener('click', function (){
-console.log("clicked.")
 
-let allCells = document.querySelectorAll("div > .cell");
-allCells.classList.remove("moused");
+      document.querySelectorAll('.moused').forEach(cell =>{
+          cell.classList.remove('moused')
+        });
+
+      });
+
+  /*
+console.log("clicked.")
+let allCells=document.querySelectorAll('.cell');
+allCells.removeClass("moused");
 
 
 });
-
+*/
 createGrid (number);
 
 
