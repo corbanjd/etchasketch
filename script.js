@@ -44,8 +44,21 @@ resetter.addEventListener('click', function (){
 
       document.querySelectorAll('.moused').forEach(cell =>{
           cell.classList.remove('moused')
-        });
+      });
+          
+          document.querySelectorAll('.row').forEach(row =>{
+            row.remove();
+          });
 
+          document.querySelectorAll(".cell").forEach(cell =>{
+            cell.remove;
+          });
+
+
+
+        
+        number = prompt("Please enter desired dimension");
+        createGrid (number);
       });
 
   /*
